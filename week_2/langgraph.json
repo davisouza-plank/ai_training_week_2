@@ -1,0 +1,11 @@
+{
+  "node_version": "20",
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "react_agent": "./apps/agents/src/day_1/agents/react-agent/graph.ts:graph",
+    "routing_agent": "./apps/agents/src/day_1/workflows/routing/graph.ts:graph"
+  },
+  "env": ".env"
+}
