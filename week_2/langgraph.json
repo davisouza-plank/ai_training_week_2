@@ -5,7 +5,10 @@
   ],
   "graphs": {
     "react_agent": "./apps/agents/src/day_1/agents/react-agent/graph.ts:graph",
-    "routing_agent": "./apps/agents/src/day_1/workflows/routing/graph.ts:graph"
+    "routing_agent": "./apps/agents/src/day_1/workflows/routing/graph.ts:graph",
+    "prompt_chaining": "./apps/agents/src/day_1/workflows/prompt-chaining/graph.ts:graph",
+    "parallelization": "./apps/agents/src/day_1/workflows/parallelization/graph.ts:graph",
+    "orchestrator-worker": "./apps/agents/src/day_1/workflows/orchestrator-worker/graph.ts:graph"
   },
   "env": ".env"
 }
