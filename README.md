@@ -3,7 +3,7 @@
 `npm install @langchain/langgraph @langchain/core`
 
 ## Run
-`npm run [file]`
+`npm run dev`
 
 ## Day 1
 ### Agents
