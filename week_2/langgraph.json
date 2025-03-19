@@ -9,7 +9,10 @@
     "prompt_chaining": "./apps/agents/src/day_1/workflows/prompt-chaining/graph.ts:graph",
     "parallelization": "./apps/agents/src/day_1/workflows/parallelization/graph.ts:graph",
     "orchestrator-worker": "./apps/agents/src/day_1/workflows/orchestrator-worker/graph.ts:graph",
-    "evaluator-optimizer": "./apps/agents/src/day_1/workflows/evaluator-optimizer/graph.ts:graph"
+    "evaluator-optimizer": "./apps/agents/src/day_1/workflows/evaluator-optimizer/graph.ts:graph",
+    "conditional-branching": "./apps/agents/src/day_2/branching/graph.ts:graph",
+    "command": "./apps/agents/src/day_2/command/graph.ts:graph",
+    "recursion-limit": "./apps/agents/src/day_2/recursion-limit/graph.ts:graph"
   },
   "env": ".env"
 }
