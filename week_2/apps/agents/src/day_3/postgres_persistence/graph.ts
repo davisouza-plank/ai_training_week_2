@@ -18,11 +18,20 @@ const rootNode = async (state: typeof GraphState.State) => {
   return { messages: [response] };
 };
 
+import pg from "pg";
+
+const { Pool } = pg;
+
 const connectionString = process.env.DATABASE_URL;
 if (!connectionString) {
     throw new Error("DATABASE_URL is not set");
 }
-const checkpointer = PostgresSaver.fromConnString(connectionString); // postgres checkpointer (see examples below)
+const pool = new Pool({
+  connectionString: connectionString,
+});
+
+const checkpointer = new PostgresSaver(pool); // postgres checkpointer (see examples below)
+
 
 try {
   await checkpointer.setup();
