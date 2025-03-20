@@ -12,7 +12,10 @@
     "evaluator-optimizer": "./apps/agents/src/day_1/workflows/evaluator-optimizer/graph.ts:graph",
     "conditional-branching": "./apps/agents/src/day_2/branching/graph.ts:graph",
     "command": "./apps/agents/src/day_2/command/graph.ts:graph",
-    "recursion-limit": "./apps/agents/src/day_2/recursion-limit/graph.ts:graph"
+    "recursion-limit": "./apps/agents/src/day_2/recursion-limit/graph.ts:graph",
+    "persistence": "./apps/agents/src/day_3/persistence/graph.ts:graph",
+    "cross_thread": "./apps/agents/src/day_3/cross_thread/graph.ts:graph",
+    "postgres_persistence": "./apps/agents/src/day_3/postgres_persistence/graph.ts:graph"
   },
   "env": ".env"
 }
