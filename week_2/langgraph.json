@@ -15,7 +15,9 @@
     "recursion-limit": "./apps/agents/src/day_2/recursion-limit/graph.ts:graph",
     "persistence": "./apps/agents/src/day_3/persistence/graph.ts:graph",
     "cross_thread": "./apps/agents/src/day_3/cross_thread/graph.ts:graph",
-    "postgres_persistence": "./apps/agents/src/day_3/postgres_persistence/graph.ts:graph"
+    "postgres_persistence": "./apps/agents/src/day_3/postgres_persistence/graph.ts:graph",
+    "history_management": "./apps/agents/src/day_4/history_management/graph.ts:graph",
+    "summarization": "./apps/agents/src/day_4/summarization/graph.ts:graph"
   },
   "env": ".env"
 }
