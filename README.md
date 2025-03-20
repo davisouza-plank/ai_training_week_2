@@ -5,62 +5,78 @@ This project demonstrates various patterns and use cases for building applicatio
 ## Project Structure
 
 ```
-week_2/
-├── apps/
-│   ├── agents/             # Custom agent implementations
-│   │   └── src/
-│   │       ├── day_1/     # Day 1 agent implementations
-│   │       │   ├── agents/    # Basic agent implementations
-│   │       │   │   └── react-agent/     # React-based agent implementation
-│   │       │   └── workflows/ # Basic workflow implementations
-│   │       │       ├── parallelization/     # Parallel execution workflow
-│   │       │       ├── evaluator-optimizer/ # Evaluation and optimization workflow
-│   │       │       ├── orchestrator-worker/ # Orchestrator-worker pattern
-│   │       │       ├── prompt-chaining/     # Prompt chaining workflow
-│   │       │       └── routing/             # Dynamic routing workflow
-│   │       └── day_2/     # Day 2 agent implementations
-│   │           ├── branching/       # Branching pattern example
-│   │           ├── command/         # Command pattern example
-│   │           ├── map-reduce/      # Map-reduce pattern example
-│   │           └── recursion-limit/ # Recursion control example
-│   └── web/               # Web interface implementation
-├── .env                   # Environment configuration
-├── package.json          # Project dependencies and scripts
-└── langgraph.json       # LangGraph configuration
+.
+├── week_2/                # Main project directory
+│   ├── apps/
+│   │   ├── agents/       # Custom agent implementations
+│   │   │   └── src/
+│   │   │       ├── day_1/  # Day 1 implementations
+│   │   │       ├── day_2/  # Day 2 implementations
+│   │   │       ├── day_3/  # Day 3 implementations
+│   │   │       └── day_4/  # Day 4 implementations
+│   │   └── web/         # Next.js web application
+│   ├── .env             # Environment configuration
+│   ├── package.json     # Project dependencies and scripts
+│   └── langgraph.json   # LangGraph configuration
 ```
 
 ## Available Custom Agents
 
-1. **Branching Agent**: Demonstrates conditional routing and parallel execution
+### Day 1 - Basic Patterns
+1. **React Agent**: Basic ReAct pattern implementation
+   - Implements tool usage and reasoning
+   - Includes calculator, dice roll, and number decomposition tools
+
+2. **Orchestrator-Worker**: Implements distributed task processing
+   - Coordinates report generation across multiple workers
+   - Demonstrates task distribution and result aggregation
+
+3. **Routing Agent**: Implements dynamic routing based on input
+   - Handles etymology, trivia, and acronym requests
+   - Shows pattern matching and conditional routing
+
+### Day 2 - Advanced Patterns
+4. **Branching Agent**: Demonstrates conditional routing and parallel execution
    - Uses scored nodes and dynamic path selection
    - Supports parallel execution of nodes
 
-2. **Command Agent**: Shows how to use Commands for state and routing
+5. **Command Agent**: Shows how to use Commands for state and routing
    - Implements subgraph navigation
    - Demonstrates dynamic routing between nodes
 
-3. **Map-Reduce Agent**: Implements parallel processing pattern
-   - Generates jokes about topics using map-reduce
+6. **Map-Reduce Agent**: Implements parallel processing pattern
    - Shows parallel task execution and result aggregation
+   - Handles distributed processing workflows
 
-4. **Recursion-Limit Agent**: Shows how to control recursive flows
+7. **Recursion-Limit Agent**: Shows how to control recursive flows
    - Implements counting with recursion limits
    - Demonstrates state management across iterations
 
-5. **Orchestrator-Worker Agent**: Implements a workflow where an orchestrator manages multiple worker agents
-   - Coordinates tasks and aggregates results from workers
+### Day 3 - State Management
+8. **Persistence Agent**: Demonstrates state persistence
+   - Implements memory saving and restoration
+   - Shows how to maintain state across sessions
 
-6. **Evaluator-Optimizer Agent**: Implements a feedback-driven optimization system
-   - Evaluates outputs and iteratively improves them based on defined criteria
+9. **Cross-Thread Agent**: Handles cross-thread communication
+   - Manages state across different execution threads
+   - Demonstrates thread-safe operations
 
-7. **Parallelization Agent**: Demonstrates how to run multiple tasks in parallel
-   - Efficiently manages concurrent executions to optimize performance
+10. **Postgres Persistence**: Implements database-backed persistence
+    - Uses PostgreSQL for state storage
+    - Shows database integration patterns
 
-8. **Prompt Chaining Agent**: Shows how to chain multiple prompts together
-   - Passes outputs from one prompt as inputs to the next for complex workflows
+### Day 4 - Advanced Features
+11. **History Management**: Implements conversation history management
+    - Filters and manages message history
+    - Demonstrates message deletion and cleanup
 
-9. **Routing Agent**: Implements dynamic routing based on input conditions
-   - Directs execution flow to different nodes based on user input or state
+12. **Summarization Agent**: Provides conversation summarization
+    - Generates summaries of chat history
+    - Shows text processing and reduction
+
+13. **Semantic Search**: Implements semantic search capabilities
+    - Performs context-aware searching
+    - Demonstrates vector-based retrieval
 
 ## Getting Started
 
@@ -128,12 +144,18 @@ The project is organized by days, with different agent implementations for each 
 2. Day 2 (`apps/agents/src/day_2/`):
    - Advanced agent implementations and patterns
 
-To add a new agent implementation:
+3. Day 3 (`apps/agents/src/day_3/`):
+   - Further advanced implementations
 
-1. Create a new directory in the appropriate day folder
-2. Implement the graph logic
-3. Add configuration as needed
-4. Update documentation to reflect the new implementation
+4. Day 4 (`apps/agents/src/day_4/`):
+   - Latest agent implementations
+
+## Web Application
+
+The web interface is built using:
+- Next.js
+- Tailwind CSS
+- TypeScript
 
 ## Troubleshooting
 
